@@ -329,6 +329,8 @@ exports.getAllStudentByCourseId = async (req, res) => {
                 }
             })
         }
+
+        
         return res.send({ status: false, subCode: 400, message: "Invalid user" })
     } catch (error) {
         console.error("Helper Err:", error);
