@@ -76,6 +76,11 @@ exports.addStudent = async (req, res) => {
             if (req.body.image === "") {
                 return res.send({ status: false, subCode: 400, message: "Image is required" })
             }
+
+
+
+
+            
             if (req.body.firstName === "") {
                 return res.send({ status: false, subCode: 400, message: "First name is required" })
             }
